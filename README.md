@@ -9,14 +9,14 @@
 
 Для задачи использовать любой из рассмотренных фреймворков: 
 
-http://bottlepy.org/docs/dev/index.html
-http://werkzeug.pocoo.org/
-http://jinja.pocoo.org/docs/
-http://flask.pocoo.org/
-http://www.tornadoweb.org/en/stable/
+ - http://bottlepy.org/docs/dev/index.html
+ - http://werkzeug.pocoo.org/
+ - http://jinja.pocoo.org/docs/
+ - http://flask.pocoo.org/
+ - http://www.tornadoweb.org/en/stable/
 
-...
+Требования: 
 
-Желательно хранить данные не в памяти.
-Использовать шаблоны (например Jinja2).
-Минимально оформить сайт.
+ - Желательно хранить данные не в памяти.
+ - Использовать шаблоны (например Jinja2).
+ - Оформить внешний вид (попытиться).
