@@ -26,7 +26,7 @@ def mock_start_response(status, headers):
     start_response_headers = headers
 
 # IMPORT APP
-from wsgi import application
+from main import application
 
 # INITIALIZE
 if PY3:
