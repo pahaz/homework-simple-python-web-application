@@ -39,4 +39,5 @@ assert is_start_response_call, "start_response isn't called"
 assert start_response_status == "200 OK", "start_response status != '200 OK'"
 
 # tearDown
-result.close()
+if hasattr(result, 'close'):
+    result.close()
