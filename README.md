@@ -1,4 +1,4 @@
-# [![Build Status](https://travis-ci.org/pahaz/homework-simple-python-web-application.svg?branch=master)](https://travis-ci.org/pahaz/homework-simple-python-web-application) ДЗ: первый мини-проект #
+# ДЗ: первый мини-проект [![Build Status](https://travis-ci.org/pahaz/homework-simple-python-web-application.svg?branch=master)](https://travis-ci.org/pahaz/homework-simple-python-web-application) #
 
 Предлагается сделать один из следующих мини-проектов:
 
