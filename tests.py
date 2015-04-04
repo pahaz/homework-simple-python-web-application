@@ -2,9 +2,10 @@ from __future__ import unicode_literals, print_function, generators, division
 from collections import Iterable
 import wsgiref.util
 import wsgiref.validate
+import sys
 
 __author__ = 'pahaz'
-
+PY3 = sys.version_info[0] == 3
 
 # MOCK environ
 mock_environ = {}
@@ -25,10 +26,11 @@ def mock_start_response(status, headers):
     start_response_headers = headers
 
 # IMPORT APP
-from main import application
+from wsgi import application
 
 # INITIALIZE
-application = wsgiref.validate.validator(application)
+if PY3:
+    application = wsgiref.validate.validator(application)
 result = application(mock_environ, mock_start_response)
 
 # ASSERTS
