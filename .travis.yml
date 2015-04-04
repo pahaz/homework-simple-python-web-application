@@ -10,6 +10,7 @@ python:
 
 install:
   - "pip install requests"
+  - "pip install selenium"
   - "pip install prospector"
 
 before_script:
@@ -18,4 +19,5 @@ before_script:
 
 script:
   - "prospector --strictness veryhigh"
-  - "python test.py"
+  - "python tests.py"
+  - "python functional_tests.py"
