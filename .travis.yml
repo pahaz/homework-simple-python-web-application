@@ -1,0 +1,21 @@
+language: python
+
+os:
+  - linux
+  - osx
+
+python:
+  - "3.4"
+  - "2.7"
+
+install:
+  - "pip install requests"
+  - "pip install prospector"
+
+before_script:
+  - "python main.py &"
+  - "sleep 1"
+
+script:
+  - "prospector --strictness veryhigh"
+  - "python test.py"
