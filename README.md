@@ -47,14 +47,15 @@
 
 Для выполнения задания можно использовать любой из рассмотренных фреймворков: 
 
- - http://bottlepy.org/docs/dev/index.html
+ - http://aiohttp.readthedocs.org/en/stable/
  - http://werkzeug.pocoo.org/
- - http://jinja.pocoo.org/docs/
  - http://flask.pocoo.org/
- - http://www.tornadoweb.org/en/stable/
+ - https://falcon.readthedocs.org/en/stable/
+ - Your-own-mini-framework
 
 Требования: 
 
  - Хранить данные не в памяти.
  - Использовать шаблоны (например Jinja2).
  - Оформить внешний вид (попытаться).
+ - Покрыть view тестами.
