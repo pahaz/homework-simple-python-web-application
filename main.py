@@ -1,4 +1,4 @@
-from __future__ import unicode_literals, print_function, generators, division
+from wsgiref.simple_server import make_server
 
 __author__ = 'pahaz'
 
@@ -16,9 +16,13 @@ def application(environ, start_response):
     return [body.encode('utf-8')]
 
 
+def run(host='', port=31338):
+    print("It's work! Visit http://{host}:{port}/".format(
+        host=host or 'localhost', 
+        port=port))
+    httpd = make_server(host, port, application)
+    httpd.serve_forever()
+
+
 if __name__ == "__main__":
-    from wsgiref.simple_server import make_server
-    PORT = 31338
-    print("It's work! Visit http://localhost:{0}/".format(PORT))
-    HTTPD = make_server('', PORT, application)
-    HTTPD.serve_forever()
+    run()
