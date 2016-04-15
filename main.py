@@ -18,7 +18,7 @@ def application(environ, start_response):
 
 def run(host='', port=31338):
     print("It's work! Visit http://{host}:{port}/".format(
-        host=host or 'localhost', 
+        host=host or 'localhost',
         port=port))
     httpd = make_server(host, port, application)
     httpd.serve_forever()
